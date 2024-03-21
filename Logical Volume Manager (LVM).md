@@ -1,4 +1,4 @@
-**##Combining the storage of multiple hard disks and mounting them to /data:**
+## Combining the storage of multiple hard disks and mounting them to /data:
 
 To combine the storage of multiple hard disks (sda, sdb, sdc, sdd) and mount the combined storage to /data, you can use LVM (Logical Volume Manager) on Linux. LVM allows you to create a single logical volume that spans multiple physical volumes (hard disks in this case), providing a flexible and manageable way to use the combined storage space.
 
@@ -80,7 +80,7 @@ df -h /data
 ```
 By following these steps, you've combined the storage of multiple hard disks into a single logical volume and mounted it to /data, providing a flexible and scalable storage solution.
 
-**##Unmounting the combined storage and mounting them individually (if needed):**
+## Unmounting the combined storage and mounting them individually (if needed):
 
 To unmount the combined storage (previously set up as a single logical volume using LVM across multiple hard drives) and revert each hard drive back to being separate and independent, you'll need to reverse the LVM configuration. This involves unmounting the logical volume, removing it, and then removing the volume group and physical volumes. This process will destroy all data on these volumes, so ensure you have backed up any important data before proceeding.
 
